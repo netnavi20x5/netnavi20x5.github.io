@@ -3,33 +3,8 @@ Original Author
 Copyright (c) 2014 Norik Davtian
 URL : https://github.com/NorikDavtian/ThreeJS-360-Panorama/blob/master/LICENSE
 -->
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>ThreeJS 360 Test</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
         <style>
-            html{
-                margin: 0;
-                padding: 0;      
-                text-align: center;
-            }
-            body {
-                font-size: 18px;
-                line-height: 1.5em;
-                position: relative;
-                width: 100%;
-                height: 100%;
-                margin: 40px auto;
-                padding: 0;
-                display: inline-block;
-                max-width: 1080px;
-                overflow-x: hidden;
-            }
-            a{
-                color: #528CE0;
-            }
             #demo{
                 /* comment for fixed dimensions */
                 position: relative;
@@ -71,15 +46,10 @@ URL : https://github.com/NorikDavtian/ThreeJS-360-Panorama/blob/master/LICENSE
                 border: 3px double #ddd;
             }
         </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-        <script language="JavaScript" src="js/owl.carousel.js" type="text/javascript"></script>
-        <script language="JavaScript" src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
-        <script language="JavaScript" src="js/jquery.slicknav.min.js" type="text/javascript"></script>
-        <script src="js/vis-timeline-graph2d.min.js"></script>
-        <link href="css/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
+
+
+
+<!-------------------------------------------------------------------->
 	<script type="text/javascript">
 	 function dispSquare()
 	 {
@@ -125,16 +95,11 @@ URL : https://github.com/NorikDavtian/ThreeJS-360-Panorama/blob/master/LICENSE
         log.firstChild ? log.insertBefore(msg, log.firstChild) : log.appendChild(msg);
     }
 	</script>
-        <h1>A panoramic experiment with Three.JS</h1>
+
+
+
+<!-------------------------------------------------------------------->
         <div id="demo">
 	    <div id="view"><input type="image" src="img/ic_crop_square_black_18dp.png" style="width:20px; height:20px" title="Square" onclick="dispSquare()"><input type="image" src="img/ic_crop_16_9_black_18dp.png" style="width:20px; height:20px" title="Wide" onclick="dispWide()"></div>
-            <div id="log"></div>
-        </div>
-        <br/>
-        <div id="visualization"></div><br>
-        <div id="vlog"></div>
-
         <script src="libs/three.min.js"></script>        
         <script src="js/main.js"></script>        
-    </body>
-</html>
