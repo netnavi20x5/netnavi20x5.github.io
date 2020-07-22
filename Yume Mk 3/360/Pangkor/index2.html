@@ -1,0 +1,80 @@
+<!--
+Original Author
+Copyright (c) 2014 Norik Davtian
+URL : https://github.com/NorikDavtian/ThreeJS-360-Panorama/blob/master/LICENSE
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ThreeJS 360 Test</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script language="JavaScript" src="js/owl.carousel.js" type="text/javascript"></script>
+        <script language="JavaScript" src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script language="JavaScript" src="js/jquery.slicknav.min.js" type="text/javascript"></script>
+        <script src="js/vis-timeline-graph2d.min.js"></script>
+        <link href="css/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+	<script type="text/javascript">
+	 function dispSquare()
+	 {
+	    //alert("Square");
+        //chgToSq();
+        $( "#demo" ).width(1024);
+        $( "#demo" ).height(650);
+        chgRes(1024,650);
+	 }
+
+	 function dispWide()
+	 {
+	    //alert("Wide");
+	    //mainCall();
+        //chgToWide();
+        $( "#demo" ).width(1280);
+        $( "#demo" ).height(720);
+        chgRes(1280,720); 
+    }
+    var items = new vis.DataSet();
+    var customDate = new Date();
+    var options = {
+        start: new Date(Date.now() - 1000 * 60 * 60 * 24),
+        end: new Date(Date.now() + 1000 * 60 * 60 * 24 * 6)
+    };
+
+    var container = document.getElementById('visualization');
+    var timeline = new vis.Timeline(container, items, options);
+    var id = "id";
+    timeline.addCustomTime(new Date(customDate.getFullYear(), customDate.getMonth(), customDate.getDate() + 3), id);
+    timeline.setCustomTimeMarker('Patching up', id, true);
+    timeline.on("markerchange", function (properties) {
+        logEvent("markerchange", properties);
+    });
+    timeline.on("markerchanged", function (properties) {
+        logEvent("markerchanged", properties);
+    });
+
+    function logEvent (event, properties) {
+        var log = document.getElementById('vlog');
+        var msg = document.createElement('div');
+        msg.innerHTML = 'event=' + event + ', ' + 'properties=' + JSON.stringify(properties);
+        log.firstChild ? log.insertBefore(msg, log.firstChild) : log.appendChild(msg);
+    }
+	</script>
+        <h1>A panoramic experiment with Three.JS</h1>
+        <div id="demo">
+	    <div id="view"><input type="image" src="img/ic_crop_square_black_18dp.png" style="width:20px; height:20px" title="Square" onclick="dispSquare()"><input type="image" src="img/ic_crop_16_9_black_18dp.png" style="width:20px; height:20px" title="Wide" onclick="dispWide()"></div>
+            <div id="log"></div>
+        </div>
+        <br/>
+        <div id="visualization"></div><br>
+        <div id="vlog"></div>
+
+        <script src="libs/three.min.js"></script>        
+        <script src="js/main.js"></script>        
+    </body>
+</html>

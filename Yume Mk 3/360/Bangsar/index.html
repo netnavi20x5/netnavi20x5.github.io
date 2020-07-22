@@ -1,0 +1,105 @@
+<!--
+Original Author
+Copyright (c) 2014 Norik Davtian
+URL : https://github.com/NorikDavtian/ThreeJS-360-Panorama/blob/master/LICENSE
+-->
+
+        <style>
+            #demo{
+                /* comment for fixed dimensions */
+                position: relative;
+                width: 100%;
+                height: 650px;
+                margin: 0 auto;
+                overflow: hidden;
+                cursor: move; /* fallback if grab cursor is unsupported */
+                cursor: grab;
+                cursor: -moz-grab;
+                cursor: -webkit-grab;
+            }
+            #demo:active { 
+                cursor: grabbing;
+                cursor: -moz-grabbing;
+                cursor: -webkit-grabbing;
+            }
+            #view{
+                position: absolute;
+                background: #fff;
+                padding: 20px;
+                top: 20px;
+                right: 20px;
+                width: 45px;
+                font: normal 12px/18px Monospace, Arial, Helvetical, sans-serif;
+                text-align: left;
+                border: 1px double #ddd;
+                z-index: 999;
+            }
+            #log{
+                position: absolute;
+                background: #fff;
+                padding: 20px;
+                bottom: 20px;
+                left: 20px;
+                width: 200px;
+                font: normal 12px/18px Monospace, Arial, Helvetical, sans-serif;
+                text-align: left;
+                border: 3px double #ddd;
+            }
+        </style>
+
+
+
+<!-------------------------------------------------------------------->
+	<script type="text/javascript">
+	 function dispSquare()
+	 {
+	    //alert("Square");
+        //chgToSq();
+        $( "#demo" ).width(1024);
+        $( "#demo" ).height(650);
+        chgRes(1024,650);
+	 }
+
+	 function dispWide()
+	 {
+	    //alert("Wide");
+	    //mainCall();
+        //chgToWide();
+        $( "#demo" ).width(1280);
+        $( "#demo" ).height(720);
+        chgRes(1280,720); 
+    }
+    var items = new vis.DataSet();
+    var customDate = new Date();
+    var options = {
+        start: new Date(Date.now() - 1000 * 60 * 60 * 24),
+        end: new Date(Date.now() + 1000 * 60 * 60 * 24 * 6)
+    };
+
+    var container = document.getElementById('visualization');
+    var timeline = new vis.Timeline(container, items, options);
+    var id = "id";
+    timeline.addCustomTime(new Date(customDate.getFullYear(), customDate.getMonth(), customDate.getDate() + 3), id);
+    timeline.setCustomTimeMarker('Patching up', id, true);
+    timeline.on("markerchange", function (properties) {
+        logEvent("markerchange", properties);
+    });
+    timeline.on("markerchanged", function (properties) {
+        logEvent("markerchanged", properties);
+    });
+
+    function logEvent (event, properties) {
+        var log = document.getElementById('vlog');
+        var msg = document.createElement('div');
+        msg.innerHTML = 'event=' + event + ', ' + 'properties=' + JSON.stringify(properties);
+        log.firstChild ? log.insertBefore(msg, log.firstChild) : log.appendChild(msg);
+    }
+	</script>
+
+
+
+<!-------------------------------------------------------------------->
+        <div id="demo">
+	    <div id="view"><input type="image" src="img/ic_crop_square_black_18dp.png" style="width:20px; height:20px" title="Square" onclick="dispSquare()"><input type="image" src="img/ic_crop_16_9_black_18dp.png" style="width:20px; height:20px" title="Wide" onclick="dispWide()"></div>
+        <script src="libs/three.min.js"></script>        
+        <script src="js/main.js"></script>        
