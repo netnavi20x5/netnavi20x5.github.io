@@ -1,36 +1,109 @@
-Phase 1: 
-Home Owner will have full control of the layout and the interior design of your home. 
-
-Phase 2: 
-Home Owner will have control the interior design of your home. 
-
-Phase 3: 
-Home Owner will own a standard Yume design. 
-
-Copy Paste codes
-
-Page 8
-
-                    <a href="canvas/360 Blank Template.html"><img src="assets/images/new-project-1-520x640.png" alt="" title=""></a>
-                    <a href="360/360 Blank Template.html"><img src="assets/images/mbr-1298x865.jpg" alt="" title=""></a>
-
-
-page 9,10
-
-
-                    <a href="canvas2/360 Blank Template.html"><img src="assets/images/new-project-2-522x640.png" alt="" title=""></a>
-                    <a href="360/360 Blank Template.html"><img src="assets/images/mbr-1298x865.jpg" alt="" title=""></a>
-
-
-View page 4
-
-                            <p><a href="page8.html">Yume Bangsar (New)</a></p>
-                            <p><a href="page9.html">Yume Pangkor Island (Ongoing)</a></p>
-                            <p><a href="page10.html">Yume Nightlife (You are almost there)</a></p>							
-
 page 12
 
 
+          <table class="table" cellspacing="0" data-empty="No matching records found">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">
+                      Package</th><th class="head-item mbr-fonts-style display-7">House Layout</th><th class="head-item mbr-fonts-style display-7">Interiors</th><th class="head-item mbr-fonts-style display-7">
+                      Price Range</th><th class="head-item mbr-fonts-style display-7">Open For Booking </th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">Phase 1</td><td class="body-item mbr-fonts-style display-7">Customizable</td><td class="body-item mbr-fonts-style display-7">Customizable</td><td class="body-item mbr-fonts-style display-7">From RM 1.8 Million</td><td class="body-item mbr-fonts-style display-7">From 1<sup>st</sup> January 2021</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">Phase 2</td><td class="body-item mbr-fonts-style display-7">Standard</td><td class="body-item mbr-fonts-style display-7">Customizable</td><td class="body-item mbr-fonts-style display-7">From RM 1.6 Million</td><td class="body-item mbr-fonts-style display-7">From 1<sup>st</sup> May 2021</td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7">Phase 3</td><td class="body-item mbr-fonts-style display-7">Standard</td><td class="body-item mbr-fonts-style display-7">Standard</td><td class="body-item mbr-fonts-style display-7">From RM 1.6 Million</td><td class="body-item mbr-fonts-style display-7">From 1<sup>st</sup> December 2021</td></tr><tr>
+                
+                
+                
+          </table>
+
+
 page 7
+
+          <table class="table isSearch" cellspacing="0" data-empty="No matching records found">
+            <thead>
+              <tr class="table-heads ">
+                  
+                  
+                  
+              <th class="head-item mbr-fonts-style display-7">
+                      Due</th><th class="head-item mbr-fonts-style display-7">
+                      Property Name</th><th class="head-item mbr-fonts-style display-7">
+                      Address</th><th class="head-item mbr-fonts-style display-7">
+                      Phone no</th><th class="head-item mbr-fonts-style display-7">
+                      Tenant Name</th><th class="head-item mbr-fonts-style display-7">
+                      Overdue Amount</th><th class="head-item mbr-fonts-style display-7">
+                      Overdue Date</th><th class="head-item mbr-fonts-style display-7">
+                      Scheduled Maintenance</th></tr>
+            </thead>
+
+            <tbody>
+              
+              
+              
+              
+            <tr> 
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7"><img src="assets/images/Alert.png" alt="dot" width="60" height="60"></td><td class="body-item mbr-fonts-style display-7">JB Diamond</td><td class="body-item mbr-fonts-style display-7">B1701, Diamond Lane, JB</td><td class="body-item mbr-fonts-style display-7">019-12345799</td><td class="body-item mbr-fonts-style display-7">Jon Cena</td><td class="body-item mbr-fonts-style display-7">RM 1500</td><td class="body-item mbr-fonts-style display-7">25 JULY 2020</td><td class="body-item mbr-fonts-style display-7"> <button onclick="myFunction()">Set Up Scheduled Maintenance</button> </td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7"><img src="assets/images/OK.png" alt="dot" width="60" height="60"></td><td class="body-item mbr-fonts-style display-7">Baker Street</td><td class="body-item mbr-fonts-style display-7">331B, Baker Street</td><td class="body-item mbr-fonts-style display-7">019-12345799</td><td class="body-item mbr-fonts-style display-7">Sherlock Holmes</td><td class="body-item mbr-fonts-style display-7">RM 3500</td><td class="body-item mbr-fonts-style display-7">31 AUGUST 2020</td><td class="body-item mbr-fonts-style display-7"> <button onclick="myFunction()">Set Up Scheduled Maintenance</button> </td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7"><img src="assets/images/OK.png" alt="dot" width="60" height="60"></td><td class="body-item mbr-fonts-style display-7">Wong Solo</td><td class="body-item mbr-fonts-style display-7">12 P, Kessel Run, Farfaraway</td><td class="body-item mbr-fonts-style display-7">019-12345799</td><td class="body-item mbr-fonts-style display-7">Artu Deeto</td><td class="body-item mbr-fonts-style display-7">RM 1100</td><td class="body-item mbr-fonts-style display-7">11 AUGUST 2020</td><td class="body-item mbr-fonts-style display-7"> <button onclick="myFunction()">Set Up Scheduled Maintenance</button> </td></tr><tr>
+                
+                
+                
+                
+              <td class="body-item mbr-fonts-style display-7"><img src="assets/images/OK.png" alt="dot" width="60" height="60"></td><td class="body-item mbr-fonts-style display-7">USS Enterprise</td><td class="body-item mbr-fonts-style display-7">1701 A, &nbsp;A Utopia Platinitia&nbsp;</td><td class="body-item mbr-fonts-style display-7">019-12345799</td><td class="body-item mbr-fonts-style display-7">Kirk James T</td><td class="body-item mbr-fonts-style display-7">RM 14500</td><td class="body-item mbr-fonts-style display-7">10 AUGUST 2020</td><td class="body-item mbr-fonts-style display-7"> <button onclick="myFunction()">Set Up Scheduled Maintenance</button> </td></tr></tbody>
+          </table>
+
+
+
+<script>
+function myFunction() {
+  alert("Schedule Maintenance Text Sent");
+}
+</script>
+
+
+360 Template
+
+canvas Template
+
+
+                </li><li class="nav-item"><a class="nav-link link text-black display-4" href="../page13.html">About Us</a></li><li class="nav-item"><a class="nav-link link text-black display-4" href="../page2.html">New Projects</a></li><li class="nav-item"><a class="nav-link link text-black display-4" href="../page4.html">Your Homes</a></li><li class="nav-item"><a class="nav-link link text-black display-4" href="../page7.html">
+                        Tenant Management</a></li>
+
+
 
 
