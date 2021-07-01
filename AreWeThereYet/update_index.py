@@ -113,7 +113,7 @@ elif ((cases_7days_mean<2000)&((icu_7days_mean)<700)&((fully_vacc/population)>.4
 elif ((cases_7days_mean<4000)&((icu_7days_mean)<800)&((fully_vacc/population)>.1)):
     #print("We are in Phase 2")
     phase=header("We are in Phase 2")
-    result=results_covid(cases_7days_mean,2000,icu_7days_mean,700,fully_vacc)
+    result=results_covid(cases_7days_mean,2000,icu_7days_mean,800,fully_vacc)
     #print(result)
 else:
     #print("We are in Phase 1")
