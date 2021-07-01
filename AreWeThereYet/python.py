@@ -114,6 +114,6 @@ lowerhalf="""
 final=upperhalf+mid+lowerhalf
 #print (final)
 
-f = open("index.html", "w")
+f = open("/home/faridil/netnavi20x5.github.io/AreWeThereYet/index.html", "w")
 f.write(final)
 f.close()
